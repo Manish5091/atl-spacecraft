@@ -1,5 +1,4 @@
 import pygame
-import random
 
 #pygame.mixer.init()
 #pygame.mixer.music.load('')
@@ -49,4 +48,3 @@ while not exit_game:
 
 pygame.quit()
 quit()
-
