@@ -28,7 +28,6 @@ current_img_y = 0
 # Game Loop
 while not exit_game:
     for event in pygame.event.get () :
-        print (event )
         if event.type == pygame.QUIT:
             exit_game = True
 
