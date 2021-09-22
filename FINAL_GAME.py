@@ -35,12 +35,26 @@ sprite = pygame.transform.scale (sprite, (1350, 800)).convert_alpha()
 sprite2 = pygame.image.load("end-place.png")
 sprite2 = pygame.transform.scale (sprite2, (1350, 360)).convert_alpha()
 sprite3 = pygame.image.load("find-shuttle.png")
-sprite3 = pygame.transform.scale (sprite3, (1350, 360)).convert_alpha()
+sprite3 = pygame.transform.scale (sprite3, (1350, 340)).convert_alpha()
+sprite4 = pygame.image.load("shuttle-place.png")
+sprite4 = pygame.transform.scale (sprite4, (1350, 320)).convert_alpha()
+sprite5 = pygame.image.load("water_place.png")
+sprite5 = pygame.transform.scale (sprite5, (1350, 300)).convert_alpha()
+sprite6 = pygame.image.load("mining.jpeg")
+sprite6 = pygame.transform.scale (sprite6, (1350, 280)).convert_alpha()
+sprite7 = pygame.image.load("base-place.png")
+sprite7 = pygame.transform.scale (sprite7, (1350, 260)).convert_alpha()
+sprite8 = pygame.image.load("base.jpeg")
+sprite8 = pygame.transform.scale (sprite8, (1350, 240)).convert_alpha()
+sprite9 = pygame.image.load("mining.jpeg")
+sprite9 = pygame.transform.scale (sprite9, (1350, 220)).convert_alpha()
+sprite10 = pygame.image.load("structure.png")
+sprite10 = pygame.transform.scale (sprite10, (1350, 200)).convert_alpha()
 
 bgimg2 = pygame.image.load("background_2.png")
 bgimg2 = pygame.transform.scale (bgimg2, (screen_width, screen_height)).convert_alpha()
-astron = pygame.image.load("ASTRON.png")
-astron = pygame.transform.scale (astron, (100, 100)).convert_alpha()
+#astron = pygame.image.load("ASTRON.png")
+#astron = pygame.transform.scale (astron, (100, 100)).convert_alpha()
 
 pygame.display.update()
 
@@ -145,8 +159,16 @@ while not exit_game:
           gamewindow.blit(sprite,(current_img_x,current_img_y))
           gamewindow.blit(sprite2,(current_img_x,current_img_y))
           gamewindow.blit(sprite3,(current_img_x,current_img_y))
+          gamewindow.blit(sprite4,(current_img_x,current_img_y))
+          gamewindow.blit(sprite5,(current_img_x,current_img_y))
+          gamewindow.blit(sprite6,(current_img_x,current_img_y))
+          gamewindow.blit(sprite7,(current_img_x,current_img_y))
+          gamewindow.blit(sprite8,(current_img_x,current_img_y))
+          gamewindow.blit(sprite9,(current_img_x,current_img_y))
+          gamewindow.blit(sprite10,(current_img_x,current_img_y))
+
           gamewindow.blit(bgimg2,(0,0))
-          gamewindow.blit(astron,(0,0))      
+          #gamewindow.blit(astron,(0,0))      
         elif welcome_screen_visible: 
             if event.type == pygame.MOUSEBUTTONDOWN:
                 button = whichButtonClicked()
@@ -161,5 +183,3 @@ while not exit_game:
         
 pygame.quit()
 quit()
-
-
